@@ -9,6 +9,7 @@
 #ifndef __WindRunner__SigninScene__
 #define __WindRunner__SigninScene__
 
+#include "cocos2d.h"
 #include <stdio.h>
 
 USING_NS_CC;

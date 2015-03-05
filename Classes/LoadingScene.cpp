@@ -1,4 +1,4 @@
-//
+﻿//
 //  LoadingScene.cpp
 //  WindRunner
 //
@@ -43,6 +43,8 @@ bool LoadingScene::init()
     {
         return false;
     }
+
+	srand(time(NULL));
     
     auto load_root = CSLoader::createNode("LoadingScene.csb");
     
@@ -70,9 +72,9 @@ void LoadingScene::updata(float dt)
 {
     std::stringstream ss;
     
-    auto rand = arc4random() % HOW_MANY_TIPS;
+    auto random = rand() % HOW_MANY_TIPS;
     
-    switch (rand)
+    switch (random)
     {
         case 0:
         {
