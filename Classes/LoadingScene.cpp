@@ -7,7 +7,7 @@
 //
 
 #include "LoadingScene.h"
-#include "SigninScene.h"
+#include "MainScene.h"
 
 const int HOW_MANY_TIPS = 4;
 
@@ -65,7 +65,7 @@ bool LoadingScene::init()
 
 void LoadingScene::changeScene(float dt)
 {
-    Director::getInstance()->replaceScene(TransitionCrossFade::create(1, SigninScene::createScene()));
+    Director::getInstance()->replaceScene(TransitionCrossFade::create(1, MainScene::createScene()));
 }
 
 void LoadingScene::updata(float dt)
